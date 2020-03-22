@@ -20,7 +20,7 @@ if [[ $# -lt 1 ]]; then
     exit 1
 fi
 
-NAME=$(basename "$1")
+NAME=$(basename "$1" | cut -d@ -f1)
 VERSION=$(date '+%Y-%m-%d')
 
 brew list "gomod-$NAME" >/dev/null 2>&1 && \
