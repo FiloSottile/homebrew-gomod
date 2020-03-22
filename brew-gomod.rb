@@ -15,9 +15,11 @@
 class BrewGomod < Formula
   desc "brew command to cleanly install binaries from Go modules"
   homepage "https://github.com/FiloSottile/homebrew-gomod"
-  url "https://github.com/FiloSottile/homebrew-gomod/archive/v0.0.1.tar.gz"
-  sha256 "dae221dbe455aa006e1f370ffec47d90da8b301304284c15902aaa7bb4edebbd"
+  url "https://github.com/FiloSottile/homebrew-gomod/archive/v0.0.2.tar.gz"
+  sha256 "b7ad8efbee6b6ad1b65d952a8437ef3b07c329011286a431cf998471cfa7a578"
   head "https://github.com/FiloSottile/homebrew-gomod.git"
+
+  depends_on "go"
 
   def install
     bin.install "brew-gomod"
